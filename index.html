@@ -13,143 +13,203 @@
 	<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
 	<!-- <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
 	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 
 <body>
 
-	<nav class="navbar navbar-light custom-navbar">
-		<div class="container">
-			<a class="navbar-brand" href="index.html">
-				<img class="img-fluid" src="assets/img/osm.jpg" width="100" style="border-radius: 50px">
-				<span>MyPortfolio</span>
-			</a>
+	<!--<nav class="navbar navbar-light custom-navbar mb-5" style="padding: 1rem 0 1rem 0;
+	background-color: #0d1e2d;
+	color: #eceff2;"> -->
+	<nav class="navbar navbar-expand-lg  mb-5" style="background-color: #0d1e2d;">
+		<div class="container-fluid">
+			<a class=" " href=""><img src="assets/img/osm.jpg" width="100" class="rounded-circle" alt=""></a>
+			<div class="row w-100">
+				<div class="col-8">
+					<h3 class="text-light mx-3 fw-bold">Oussama JOMAA</h3>
+					<h6 class="text-light mx-3">Web developper</h6>
+				</div>
+				<div class="col-4 d-flex justify-content-end">
+					<button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line" style="margin-bottom: 0;"></span>
+					</button>
+				</div>
+			</div>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0 filters" id="filters">
+					<li class="nav-item">
+						<a href="#" data-filter="*" class="nav-link text-light">All</a>
+					</li>
+					<li class="nav-item">
+
+						<a href="#" data-filter=".services" class="nav-link text-light">Services</a>
+					</li>
+					<li class="nav-item">
+
+						<a href="#" data-filter=".dev" class="nav-link text-light">Developments</a>
+					</li>
+					<li class="nav-item">
+
+						<a href="#" data-filter=".skills" class="nav-link text-light">Skills</a>
+					</li>
+					
+				</ul>
+				
+			</div>
+		</div>
+	
 
 		</div>
 	</nav>
 
-	<main id="main">
 
-		<!-- ======= Works Section ======= -->
-		<section class="section site-portfolio">
-			<div class="container">
-				<div class="row mb-5 align-items-center">
-					<div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
-						<h2>Hey, I'm Oussama JOMAA</h2>
-						<p class="mb-0">Web developper</p>
+
+	<!-- ======= Works Section ======= -->
+
+
+	<div class="container">
+		<div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
+
+			<div class="item services col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-4">
+				<a href="#" class="item-wrap fancybox">
+					<div class="work-info">
+						<h2 class="card-title">Wordpress</h2>
+						<h4>Integration</h4>
 					</div>
-					<div class="col-md-12 col-lg-6 text-start text-lg-end" data-aos="fade-up" data-aos-delay="100">
-						<div id="filters" class="filters">
-							<a href="#" data-filter="*" class="active">All</a>
-							<a href="#" data-filter=".services">Services</a>
-							<a href="#" data-filter=".dev">Developments</a>
-							<a href="#" data-filter=".skills">Skills</a>
-						</div>
-					</div>
-				</div>
-				<div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
-					<div class="item services col-sm-6 col-md-4 col-lg-4 mb-4">
-						<a href="#" class="item-wrap fancybox">
-							<div class="work-info">
-								<h3>Wordpress</h3>
-								<span>Integration</span>
-							</div>
-							<img class="img-fluid" src="assets/img/wordpress.png">
-						</a>
-					</div>
-					<div class="item services col-sm-6 col-md-4 col-lg-4 mb-4">
-						<a href="#" class="item-wrap fancybox">
-							<div class="work-info">
-								<h3>Custom Website</h3>
-								<span>Design</span>
-							</div>
-							<img class="img-fluid" src="assets/img/design.png">
-						</a>
-					</div>
-					<div class="item services col-sm-6 col-md-4 col-lg-4 mb-4">
-						<a href="#" class="item-wrap fancybox">
-							<div class="work-info">
-								<h3>Applications</h3>
-								<span>Development</span>
-							</div>
-							<img class="img-fluid" src="assets/img/application.png">
-						</a>
-					</div>
-					<div class="item services col-sm-6 col-md-4 col-lg-4 mb-4">
-						<a href="#" class="item-wrap fancybox">
-							<div class="work-info">
-								<h3>SEO</h3>
-								<span></span>
-							</div>
-							<img class="img-fluid" src="assets/img/seo.png">
-						</a>
-					</div>
-					<div class="item dev col-sm-6 col-md-4 col-lg-4 mb-4">
-						<a href="https://obtic.sorbonne-universite.fr/tanagra-db" target="_blank" class="item-wrap fancybox">
-							<div class="work-info">
-								<h3>Mapping</h3>
-								<span>Lcoations</span>
-							</div>
-							<img class="img-fluid" src="assets/img/dev1.png">
-						</a>
-					</div>
-					<div class="item dev col-sm-6 col-md-4 col-lg-4 mb-4">
-						<a href="https://obtic.sorbonne-universite.fr/voltaire" target="_blank" class="item-wrap fancybox">
-							<div class="work-info">
-								<h3>Voltaire</h3>
-								<span>Library</span>
-							</div>
-							<img class="img-fluid" src="assets/img/dev2.png">
-						</a>
-					</div>
-					<div class="item dev col-sm-6 col-md-4 col-lg-4 mb-4">
-						<a href="https://obtic.sorbonne-universite.fr" target="_blank" class="item-wrap fancybox">
-							<div class="work-info">
-								<h3>Observatoir</h3>
-								<span>Obtic</span>
-							</div>
-							<img class="img-fluid" src="assets/img/dev3.png">
-						</a>
-					</div>
-					<div class="item dev col-sm-6 col-md-4 col-lg-4 mb-4">
-						<a href="rekognition.html" class="item-wrap fancybox">
-							<div class="work-info">
-								<h3>Faces Rekognition</h3>
-								<span>On AWS</span>
-							</div>
-							<img class="img-fluid" src="assets/img/dev4.png">
-						</a>
-					</div>
-					<div class="item dev col-sm-6 col-md-4 col-lg-4 mb-4">
-						<a href="https://play.google.com/store/apps/details?id=com.elcamino.oppb&gl=FR" target="_blank" class="item-wrap fancybox">
-							<div class="work-info">
-								<h3>Notification App</h3>
-								<span>MOBILE APPLICATION</span>
-							</div>
-							<img class="img-fluid" src="assets/img/dev5.png">
-						</a>
-					</div>
-					<div class="item skills col-sm-6 col-md-4 col-lg-4 mb-4">
-						<a href="#" class="item-wrap fancybox">
-							<div class="work-info">
-								<h3>Skills</h3>
-								<span>ANGULAR SYMFONY ...</span>
-							</div>
-							<img class="img-fluid" src="assets/img/skils.png">
-						</a>
-					</div>
-				</div>
+					<img class="img-fluid" src="assets/img/wordpress.png">
+				</a>
 			</div>
-		</section><!-- End  Works Section -->
+			<div class="item services col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-4">
+				<a href="#" class="item-wrap fancybox">
+					<div class="work-info">
+						<h2 class="card-title">Custom Website</h2>
+						<h4 class="card-content">Design</h4>
+					</div>
+					<img class="img-fluid" src="assets/img/design.png">
+				</a>
+			</div>
+			<div class="item services col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-4">
+				<a href="#" class="item-wrap fancybox">
+					<div class="work-info">
+						<h2 class="card-title">Applications</h2>
+						<h4 class="card-content">Development</h4>
+					</div>
+					<img class="img-fluid" src="assets/img/application.png">
+				</a>
+			</div>
+			<div class="item services col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-4">
+				<a href="#" class="item-wrap fancybox">
+					<div class="work-info">
+						<h2 class="card-title">S E O</h2>
+						<h4 class="card-content"></h4>
+					</div>
+					<img class="img-fluid" src="assets/img/seo.png">
+				</a>
+			</div>
+			<div class="item dev col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-4">
+				<a href="https://obtic.sorbonne-universite.fr/tanagra" target="_blank" class="item-wrap fancybox">
+					<div class="work-info">
+						<h2 class="card-title">Mapping</h2>
+						<h4 class="card-content">A web interface for geolocation and mapping of place names in
+							texts</h4>
+					</div>
+					<img class="img-fluid" src="assets/img/dev1.png">
+				</a>
+			</div>
+			<div class="item dev col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-4">
+				<a href="https://obtic.sorbonne-universite.fr/summary" target="_blank" class="item-wrap fancybox">
+					<div class="work-info">
+						<h2 class="card-title">Summary</h2>
+						<h4 class="card-content">Summarize text automatically and identify key words</h4>
+					</div>
+					<img class="img-fluid" src="assets/img/summary.png">
+				</a>
+			</div>
+			<div class="item dev col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-4">
+				<a href="https://obtic.sorbonne-universite.fr/voltaire" target="_blank" class="item-wrap fancybox">
+					<div class="work-info">
+						<h2 class="card-title">Voltaire Books</h2>
+						<h4 class="card-content">A database of books from Voltaire's library</h4>
+					</div>
+					<img class="img-fluid" src="assets/img/voltaire.png">
+				</a>
+			</div>
+			<div class="item dev col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-4">
+				<a href="https://obtic.huma-num.fr/manuscript" target="_blank" class="item-wrap fancybox">
+					<div class="work-info">
+						<h2 class="card-title">Voltaire Manuscripts</h2>
+						<h4 class="card-content">A database of Voltaire's manuscripts</h4>
+					</div>
+					<img class="img-fluid" src="assets/img/manuscript.png">
+				</a>
+			</div>
+			<div class="item dev col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-4">
+				<a href="https://obtic.sorbonne-universite.fr" target="_blank" class="item-wrap fancybox">
+					<div class="work-info">
+						<h2 class="card-title">OBTIC</h2>
+						<h4 class="card-content">Un site web de l’Observatoire des textes, des idées et des
+							corpus</h4>
+					</div>
+					<img class="img-fluid" src="assets/img/dev3.png">
+				</a>
+			</div>
+			<div class="item dev col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-4">
+				<a href="rekognition.html" class="item-wrap fancybox">
+					<div class="work-info">
+						<h2 class="card-title">Faces Rekognition</h2>
+						<h4 class="card-content">Un module de reconnaissance faciale pour TEREGA</h4>
+					</div>
+					<img class="img-fluid" src="assets/img/dev4.png">
+				</a>
+			</div>
+			<div class="item dev col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-4">
+				<a href="https://obvil.huma-num.fr/sondage" target="_blank" class="item-wrap fancybox">
+					<div class="work-info">
+						<h2 class="card-title">Sondage</h2>
+						<h4 class="card-content">Interface d'un sondage anonyme à la faculté de médecine à la
+							Sorbonne</h4>
+					</div>
+					<img class="img-fluid" src="assets/img/sondage.png">
+				</a>
+			</div>
+
+
+			<div class="item dev col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-4">
+				<a href="https://play.google.com/store/apps/details?id=com.elcamino.oppb&gl=FR" target="_blank"
+					class="item-wrap fancybox">
+					<div class="work-info">
+						<h2 class="card-title">Application mobile</h2>
+						<h4 class="card-content">Une application de notifications pour El Camino</h4>
+					</div>
+					<img class="img-fluid" src="assets/img/dev5.png">
+				</a>
+			</div>
+			<div class="item skills col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-4">
+				<a href="#" class="item-wrap fancybox">
+					<div class="work-info">
+						<h2 class="card-title">Skills</h2>
+						<h4 class="card-content">Angular Symfony PHP HTML5 CSS3 Python Nodejs Javascript Jquery
+							Mysql Bootstrap Wordpress Firebase Aws Terraform ...</h4>
+					</div>
+					<img class="img-fluid" src="assets/img/skil.png">
+				</a>
+			</div>
+		</div>
+		
+	</div>
 
 
 
-	</main><!-- End #main -->
 
 	<!-- ======= Footer ======= -->
 	<footer class="footer" role="contentinfo">
@@ -170,7 +230,7 @@
 							<path
 								d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z" />
 						</svg>
-						osm70@gmx.com
+						osmjom@gmail.com
 					</div>
 				</div>
 
@@ -181,7 +241,13 @@
 	<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
 			class="bi bi-arrow-up-short"></i></a>
 
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+		integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+		crossorigin="anonymous"></script>
 	<script src="assets/js/main.js"></script>
+
+	
 </body>
 
 </html>
